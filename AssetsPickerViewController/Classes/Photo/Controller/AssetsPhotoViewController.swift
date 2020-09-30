@@ -31,7 +31,7 @@ open class AssetsPhotoViewController: UIViewController {
     let fetchService = AssetsFetchService()
     
     lazy var cancelButtonItem: UIBarButtonItem = {
-        let buttonItem = UIBarButtonItem(barButtonSystemItem: .cancel,
+        let buttonItem = UIBarButtonItem(barButtonSystemItem: .stop,
                                          target: self,
                                          action: #selector(pressedCancel(button:)))
         return buttonItem
@@ -137,12 +137,12 @@ open class AssetsPhotoViewController: UIViewController {
     
     override open func viewDidLoad() {
         super.viewDidLoad()
-        
         setupCommon()
         setupBarButtonItems()
         setupCollectionView()
         setupPlaceholderView()
         setupLoadActivityIndicatorView()
+        carelySetup()
         
         updateEmptyView(count: 0)
         updateNoPermissionView()

@@ -9,6 +9,9 @@
 import UIKit
 
 extension UIColor {
+    static let carelyPurple =  UIColor(alpha: 1, red: 150, green: 98, blue: 219)
+    static let carelyLightGray =  UIColor(alpha: 1, red: 150, green: 159, blue: 165)
+    static let carelyText = UIColor(alpha: 1, red: 51, green: 51, blue: 51)
     
     open var RGBString: String {
         let colorRef = cgColor.components

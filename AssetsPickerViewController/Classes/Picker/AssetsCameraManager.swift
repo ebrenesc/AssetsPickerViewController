@@ -18,7 +18,7 @@ class AssetsPickerManager: NSObject {
     fileprivate var successCallback: ((Any?) -> Void)?
     fileprivate var cancelCallback: (() -> Void)?
     
-    private let allowsEditing: Bool = true
+    private let allowsEditing: Bool = false
     fileprivate var savedLocalIdentifier: String?
     
     var isAutoSave: Bool = true
